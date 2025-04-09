@@ -254,3 +254,15 @@ function showToast(message) {
         toast.className = 'toast';
     }, 3000);
 }
+
+document.getElementById("Botao1").addEventListener("click", function() {
+    window.location.href = "https://web.whatsapp.com/";
+  });
+
+document.getElementById("Botao2").addEventListener("click", function() {
+    window.location.href = "https://www.instagram.com/";
+  });
+  
+document.getElementById("Botao3").addEventListener("click", function() {
+    window.location.href = "https://workspace.google.com/intl/pt-BR/gmail/";
+  });

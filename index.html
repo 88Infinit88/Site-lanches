@@ -6,7 +6,8 @@
     <title>Lanche Legal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -15,10 +16,10 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#lanches">Lanches</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+
+                <li><a href="index.html">Cardapio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
         <div class="cart-icon" onclick="toggleCart()">
@@ -28,94 +29,167 @@
     </header>
 
     <main>
+        <section class="carrossel">
+        <h1>________________________________________</h1>
+        <h1>__Mais Pedidos</h1>
+        <h1>________________</h1>
+        <h1>Lanches</h1>
+        <h1>Sobremesas</h1>
+        <h1>bebidas</h1>
+
+        <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Hamburguer.png" class="d-block w-100" alt="Hamburguer de Siri">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Sachicha.png" class="d-block w-100" alt="Sandwich Tamanho Família">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Rosquinha.png" class="d-block w-100" alt="Hamburguer de Siri">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Cookie.png" class="d-block w-100" alt="Cookie">
+              </div> 
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Rainha do misisip.png" class="d-block w-100" alt="Hamburguer de Siri">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Suco do riby.png" class="d-block w-100" alt="Suco do Rigby">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
         <section class="lanches">
             <h1>______________________________</h1>
-            <h1>__________LANCHES___________</h1>
-            <h1>___________________________</h1>
+            <h1>___LANCHES____________</h1>
+            <h1>________________</h1>
             <div class="product-card">
-                <img src="assets/noFilter.png" alt="Mountain E-Bike">
+                <img src="assets/noFilter.png" alt="Roblox Burguer">
                 <h3>Roblox Burguer</h3>
                 <p class="price">R$ 19,90</p>
                 <p class="description">Delicioso hamburguer com o sabor da criatividade.</p>
-                <button onclick="openModal(1, 'Mountain E-Bike Pro', 19.90, 'Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.', 'assets/noFilter.png')">Adicionar ao Carrinho</button>
+                <button onclick="openModal(1, 'Roblox Burguer', 19.90, 'Delicioso hamburguer com o sabor da criatividade.', 'assets/noFilter.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="assets/Hamburguer.png" alt="Urban E-Bike">
+                <img src="assets/Hamburguer.png" alt="Hamburguer de Siri">
                 <h3>Hamburguer de Siri</h3>
                 <p class="price">R$ 34.90</p>
                 <p class="description">Uma deliciosa experiencia que veio direto do fundo do mar.</p>
-                <button onclick="openModal(2, 'Urban E-Bike Comfort', 35.90, 'Perfeita para mobilidade urbana, design moderno e confortável.', 'assets/Hamburguer.png')">Adicionar ao Carrinho</button>
+                <button onclick="openModal(2, 'Hamburguer de Siri', 35.90, 'Uma deliciosa experiencia que veio direto do fundo do mar.', 'assets/Hamburguer.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="assets/Espinafr.jpg" alt="Sport E-Bike">
+                <img src="assets/Espinafr.jpg" alt="Espinafre do Popeye">
                 <h3>Espinafre do Popeye</h3>
                 <p class="price">R$ 9,90</p>
                 <p class="description">Um alimento saudavel que te da força para enfrentar o dia inteiro.</p>
-                <button onclick="openModal(3, 'Sport E-Bike Speed', 9.90, 'Bike elétrica esportiva com alto desempenho e velocidade máxima.', 'assets/Espinafr.jpg')">Adicionar ao Carrinho</button>
+                <button onclick="openModal(3, 'Espinafre do Popeye', 9.90, 'Um alimento saudavel que te da força para enfrentar o dia inteiro.', 'assets/Espinafr.jpg')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="assets/Sandwich_of_death.png" alt="Kids E-B">
+                <img src="assets/Sandwich_of_death.png" alt="Sandwich da Morte">
                 <h3>Sandwich da Morte</h3>
                 <p class="price">R$ 39,90</p>
-                <p class="description">Um guaxinim chamado rigby nos trouxe esse lanche vai matar sua fome.</p>
-                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'assets/Sandwich_of_death.png')">Adicionar ao Carrinho</button>
+                <p class="description">Um guaxinim chamado rigby nos trouxe esse lanche que vai matar sua fome.</p>
+                <button onclick="openModal(4, 'Sandwich da Morte', 39.90, 'Um guaxinim chamado rigby nos trouxe esse lanche que vai matar sua fome.', 'assets/Sandwich_of_death.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Kids E-B">
-                <h3>Kids E-Bike Fun</h3>
-                <p class="price">R$ 4.999,00</p>
-                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
-                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+                <img src="assets/aborguesimpsons.png" alt="Hamburguer Ataque cardiaco">
+                <h3>Hamburguer Ataque cardiaco</h3>
+                <p class="price">R$ 50,00</p>
+                <p class="description">Coma com moderação, pois é um lanche muito perigoso.</p>
+                <button onclick="openModal(5, 'Hamburguer Ataque cardiaco', 50, 'Coma com moderação, pois é um lanche muito perigoso.', 'assets/aborguesimpsons.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Kids E-B">
-                <h3>Kids E-Bike Fun</h3>
-                <p class="price">R$ 4.999,00</p>
-                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
-                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+                <img src="assets/Sachicha.png" alt="Sandwich Tamanho Família">
+                <h3>Sandwich Tamanho Família</h3>
+                <p class="price">R$ 44,90</p>
+                <p class="description">Desafiamos você a comer esse lanche inteiro.</p>
+                <button onclick="openModal(6, 'Sandwich Tamanho Família', 44.90, 'Desafiamos você a comer esse lanche inteiro.', 'assets/Sachicha.png')">Adicionar ao Carrinho</button>
+            </div>
+
+        </section>
+
+        <section class="sobremesas">
+            <h1>_________________________________</h1>
+            <h1>__SOBREMESAS___________</h1>
+            <h1>________________</h1>
+
+            <div class="product-card">
+                <img src="assets/Rosquinha.png" alt="Rosquinha">
+                <h3>Rosquinha</h3>
+                <p class="price">R$ 7,90</p>
+                <p class="description">sobremesa clássica, perfeita para acompanhar seu café.</p>
+                <button onclick="openModal(7, 'Rosquinha', 7.90, 'sobremesa clássica, perfeita para acompanhar seu café.', 'assets/Rosquinha.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Kids E-B">
-                <h3>Kids E-Bike Fun</h3>
-                <p class="price">R$ 4.999,00</p>
-                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
-                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
-            </div>
+                <img src="assets/Cookie.png" alt="Cookie">
+                <h3>Cookie</h3>
+                <p class="price">R$ 4,90</p>
+                <p class="description">Acompanhamento perfeito para seu café da manhã.</p>
+                <button onclick="openModal(8, 'Cookie', 4.90, 'Acompanhamento perfeito para seu café da manhã.', 'assets/Cookie.png')">Adicionar ao Carrinho</button>
+            </div>  
+
         </section>
 
         <section class="bebidas">
             <h1>______________________________</h1>
-            <h1>__________BEBIDAS___________</h1>
-            <h1>___________________________</h1>
+            <h1>____BEBIDAS___________</h1>
+            <h1>________________</h1>
             <div class="product-card">
-                <img src="assets/agua.png" alt="Água">
-                <h3>Água</h3>
-                <p class="price">R$ 2,00</p>
-                <p class="description">Hidratação essencial para o seu dia.</p>
-                <button onclick="openModal(5, 'Água', 2.00, 'Hidratação essencial para o seu dia.', 'assets/agua.png')">Adicionar ao Carrinho</button>
+                <img src="assets/Rainha do misisip.png" alt="Rainha do Misissipi">
+                <h3>Rainha do Misissipi</h3>
+                <p class="price">R$ 7,90</p>
+                <p class="description">Bebida perfeita para acompanhar seu lanche.</p>
+                <button onclick="openModal(9, 'Rainha do Misissipi', 7.90, 'Bebida perfeita para acompanhar seu lanche.', 'assets/Rainha do misisip.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="assets/refrigerante.png" alt="Refrigerante">
-                <h3>Refrigerante</h3>
-                <p class="price">R$ 5,00</p>
-                <p class="description">Refresque-se com o sabor do seu refrigerante favorito.</p>
-                <button onclick="openModal(6, 'Refrigerante', 5.00, 'Refresque-se com o sabor do seu refrigerante favorito.', 'assets/refrigerante.png')">Adicionar ao Carrinho</button>
+                <img src="assets/Suco do riby.png" alt="Suco do Rigby">
+                <h3>Suco do Rigby</h3>
+                <p class="price">R$ 9,90</p>
+                <p class="description">Bebida refrescante para qualquer hora do dia.</p>
+                <button onclick="openModal(10, 'Suco do Rigby', 9.90, 'Bebida refrescante para qualquer hora do dia.', 'assets/refrigerante.png')">Adicionar ao Carrinho</button>
             </div>  
-
-            <div class="product-card">
-                <img src="assets/suco.png" alt="Suco">
-                <h3>Suco Natural</h3>
-                <p class="price">R$ 4,00</p>
-                <p class="description">Refresque-se com o sabor do seu suco favorito.</p>
-                <button onclick="openModal(7, 'Suco Natural', 4.00, 'Refresque-se com o sabor do seu suco favorito.', 'assets/suco.png')">Adicionar ao Carrinho</button>
-            </div>
         </section>
 
         <!-- Modal de quantidade -->
@@ -170,7 +244,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 E-Bikes Store. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Lanche Legal. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
