@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Bikes Store</title>
+    <title>Lanche Legal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -11,11 +11,12 @@
 <body>
     <header>
         <div class="logo">
-            <h1>E-Bikes Store</h1>
+            <h1>Lanche Legal</h1>
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#products">Produtos</a></li>
+                <li><a href="#lanches">Lanches</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -27,29 +28,93 @@
     </header>
 
     <main>
-        <section class="products">
+        <section class="lanches">
+            <h1>______________________________</h1>
+            <h1>__________LANCHES___________</h1>
+            <h1>___________________________</h1>
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Mountain E-Bike">
-                <h3>Mountain E-Bike Pro</h3>
-                <p class="price">R$ 12.999,00</p>
-                <p class="description">Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.</p>
-                <button onclick="openModal(1, 'Mountain E-Bike Pro', 12999.00, 'Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+                <img src="assets/noFilter.png" alt="Mountain E-Bike">
+                <h3>Roblox Burguer</h3>
+                <p class="price">R$ 19,90</p>
+                <p class="description">Delicioso hamburguer com o sabor da criatividade.</p>
+                <button onclick="openModal(1, 'Mountain E-Bike Pro', 19.90, 'Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.', 'assets/noFilter.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Urban E-Bike">
-                <h3>Urban E-Bike Comfort</h3>
-                <p class="price">R$ 8.999,00</p>
-                <p class="description">Perfeita para mobilidade urbana, design moderno e confortável.</p>
-                <button onclick="openModal(2, 'Urban E-Bike Comfort', 8999.00, 'Perfeita para mobilidade urbana, design moderno e confortável.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+                <img src="assets/Hamburguer.png" alt="Urban E-Bike">
+                <h3>Hamburguer de Siri</h3>
+                <p class="price">R$ 34.90</p>
+                <p class="description">Uma deliciosa experiencia que veio direto do fundo do mar.</p>
+                <button onclick="openModal(2, 'Urban E-Bike Comfort', 35.90, 'Perfeita para mobilidade urbana, design moderno e confortável.', 'assets/Hamburguer.png')">Adicionar ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Sport E-Bike">
-                <h3>Sport E-Bike Speed</h3>
-                <p class="price">R$ 15.999,00</p>
-                <p class="description">Bike elétrica esportiva com alto desempenho e velocidade máxima.</p>
-                <button onclick="openModal(3, 'Sport E-Bike Speed', 15999.00, 'Bike elétrica esportiva com alto desempenho e velocidade máxima.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+                <img src="assets/Espinafr.jpg" alt="Sport E-Bike">
+                <h3>Espinafre do Popeye</h3>
+                <p class="price">R$ 9,90</p>
+                <p class="description">Um alimento saudavel que te da força para enfrentar o dia inteiro.</p>
+                <button onclick="openModal(3, 'Sport E-Bike Speed', 9.90, 'Bike elétrica esportiva com alto desempenho e velocidade máxima.', 'assets/Espinafr.jpg')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Sandwich_of_death.png" alt="Kids E-B">
+                <h3>Sandwich da Morte</h3>
+                <p class="price">R$ 39,90</p>
+                <p class="description">Um guaxinim chamado rigby nos trouxe esse lanche vai matar sua fome.</p>
+                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'assets/Sandwich_of_death.png')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/300x200" alt="Kids E-B">
+                <h3>Kids E-Bike Fun</h3>
+                <p class="price">R$ 4.999,00</p>
+                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
+                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/300x200" alt="Kids E-B">
+                <h3>Kids E-Bike Fun</h3>
+                <p class="price">R$ 4.999,00</p>
+                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
+                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/300x200" alt="Kids E-B">
+                <h3>Kids E-Bike Fun</h3>
+                <p class="price">R$ 4.999,00</p>
+                <p class="description">Bike elétrica para crianças, divertida e segura.</p>
+                <button onclick="openModal(4, 'Kids E-Bike Fun', 4999, 'Bike elétrica para crianças, divertida e segura.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section class="bebidas">
+            <h1>______________________________</h1>
+            <h1>__________BEBIDAS___________</h1>
+            <h1>___________________________</h1>
+            <div class="product-card">
+                <img src="assets/agua.png" alt="Água">
+                <h3>Água</h3>
+                <p class="price">R$ 2,00</p>
+                <p class="description">Hidratação essencial para o seu dia.</p>
+                <button onclick="openModal(5, 'Água', 2.00, 'Hidratação essencial para o seu dia.', 'assets/agua.png')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/refrigerante.png" alt="Refrigerante">
+                <h3>Refrigerante</h3>
+                <p class="price">R$ 5,00</p>
+                <p class="description">Refresque-se com o sabor do seu refrigerante favorito.</p>
+                <button onclick="openModal(6, 'Refrigerante', 5.00, 'Refresque-se com o sabor do seu refrigerante favorito.', 'assets/refrigerante.png')">Adicionar ao Carrinho</button>
+            </div>  
+
+            <div class="product-card">
+                <img src="assets/suco.png" alt="Suco">
+                <h3>Suco Natural</h3>
+                <p class="price">R$ 4,00</p>
+                <p class="description">Refresque-se com o sabor do seu suco favorito.</p>
+                <button onclick="openModal(7, 'Suco Natural', 4.00, 'Refresque-se com o sabor do seu suco favorito.', 'assets/suco.png')">Adicionar ao Carrinho</button>
             </div>
         </section>
 
