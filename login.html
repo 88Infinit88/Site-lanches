@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <input type="text" id="login" /> 
+        <input type="password" id="senha" />
+        <button onclick="logar()">Logar</button>
+    </div>
+</body>
+<script>
+    function logar() {
+        console.log(document.getElementById("login").innerHTML.length)
+        if(document.getElementById("login").value.length<=0){ alert("login vazio"); return;}
+        if(document.getElementById("senha").value.length<=0){ alert("senha vazia"); return;}
+        window.location.href = "index.html";
+    }
+</script>
+</html>

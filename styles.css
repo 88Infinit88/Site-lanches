@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, #ff0000, #2600ff); /* Degradê de vermelho para azul */
+    background: linear-gradient(to right, #bd0000, #bd0000); /* Degradê de vermelho para azul */
     color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
@@ -117,7 +117,7 @@ main {
 
 .price {
     font-size: 1.25rem;
-    color: #ff0000;
+    color: #bd0000;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -129,7 +129,7 @@ main {
 }
 
 button {
-    background-color: #ff0000;
+    background-color: #bd0000;
     color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem 1rem;
@@ -140,7 +140,7 @@ button {
 }
 
 button:hover {
-    background-color: #0019fa;
+    background-color: #414141;
 }
 
 /* Modal Styles */
@@ -212,7 +212,7 @@ quantity-selector input {
 }
 
 .cart-item {
-    border-bottom: 1px solid #0044ff;
+    border-bottom: 1px solid #414141;
     padding: 1rem 0;
 }
 
@@ -222,7 +222,7 @@ quantity-selector input {
 }
 
 footer {
-    background-color: #333;
+    background-color: #414141;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -289,12 +289,12 @@ footer {
 }
 
 .cart-actions button:first-child {
-    background-color: #ff0000;
+    background-color: #bd0000;
     color: #ffffff;
 }
 
 .cart-actions button:last-child {
-    background-color: #0004ff;
+    background-color: #414141;
     color: #fff;
 }
 
@@ -344,4 +344,11 @@ footer {
 .toast.show {
     visibility: visible;
     opacity: 1;
+}
+
+.login {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

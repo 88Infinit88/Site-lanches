@@ -74,6 +74,32 @@ function addToCart() {
     // Abrir o carrinho
     openCart();
 }
+function removeToCart(item) {
+   
+    // Verificar se o produto já está no carrinho
+    const existingProduct = cart.find(itemCart => itemCart.name === item);
+
+    if (existingProduct.quantity > 1) {
+        // Atualizar a quantidade se o produto já estiver no carrinho
+        existingProduct.quantity --;
+        console.log(cart)
+    } else {
+        // Remover novo produto ao carrinho
+        cart= cart.filter(itemCart => itemCart.name !== item);
+    }
+
+    // Atualizar o contador do carrinho
+    updateCartCount();
+
+    // Atualizar o carrinho na interface
+    updateCartUI();
+
+    // Fechar o modal
+    closeModal();
+
+    // Abrir o carrinho
+    openCart();
+}
 
 function updateCartCount() {
     const cartCountElement = document.getElementById('cart-count');
@@ -178,6 +204,7 @@ function updateCartUI() {
                 <p>Quantidade: ${item.quantity}</p>
                 <p>Preço: R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}</p>
             </div>
+            <button onclick="removeToCart('${item.name}')"> Remover </button>
         `;
         cartItemsContainer.appendChild(cartItem);
     });
@@ -239,7 +266,13 @@ function closePaymentModal() {
 }
 
 function proceedToPayment() {
-    showToast('Redirecionando para a página de pagamento...');
+    cart= [];
+    // Atualizar o contador do carrinho
+    updateCartCount();
+
+    // Atualizar o carrinho na interface
+    updateCartUI();
+
     // Aqui você pode redirecionar para uma página de pagamento real
     closePaymentModal();
 }
