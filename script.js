@@ -296,6 +296,14 @@ document.getElementById("Botao2").addEventListener("click", function() {
     window.location.href = "https://www.instagram.com/";
   });
   
-document.getElementById("Botao3").addEventListener("click", function() {
+  document.getElementById("Botao3").addEventListener("click", function() {
+    window.location.href = "https://workspace.google.com/intl/pt-BR/gmail/";
+  });
+
+  document.getElementById("Botao4").addEventListener("click", function() {
+    window.location.href = "https://www.google.com/maps/place/R.+José+Francisco+Sodré,+169+-+Praia+João+Rosa,+Biguaçu+-+SC,+88160-342/@-27.5100864,-48.6448045,16.25z/data=!4m6!3m5!1s0x95274c21f700e709:0x7db14001a29e9351!8m2!3d-27.5079011!4d-48.6437329!16s%2Fg%2F11lmp6jfkn?entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D";
+  });
+
+  document.getElementById("Botao5").addEventListener("click", function() {
     window.location.href = "https://workspace.google.com/intl/pt-BR/gmail/";
   });
